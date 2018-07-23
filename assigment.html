@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var mainItem = ['biryani','rice','pulka','naan'];
+		var curryItem = ['mushroom','chicken','panner','kajumasala']
+		function goToParadise(main,curry){
+			for(var i = 0 ; i < mainItem.length; i++ ){
+				for (var j = 0; j < curryItem.length; j++) {
+					if(main === mainItem[i] && curry === curryItem[j]){
+						var check = 'hari';
+					}
+				}
+			}
+			if(check==='hari'){
+				console.log(main + " " + curry + ' is on its way');
+			}
+			else{
+				console.log(main + " " + curry + ' is not available');
+			}
+		}
+		goToParadise('pulka','dal');
+		goToParadise('pulka','panner');
+		
+	</script>
+</body>
+</html>
